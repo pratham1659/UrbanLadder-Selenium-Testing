@@ -1,5 +1,8 @@
 package com.book.base;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
@@ -16,14 +19,33 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class TestBase {
 	
-	WebDriver driver;
-	public Properties prop;
+	public static WebDriver driver;
+	public static Properties prop;
 	public Properties dataProp;
 	
-	public WebDriver initializeBrowser() {
+	
+	public TestBase() {
 
-		String browserName = "chrome";
-		String myUrl = "https://www.urbanladder.com/";
+		try {
+			prop = new Properties();
+			FileInputStream fis1 = new FileInputStream("./src/main/java/com/book/config/config.properties");
+			prop.load(fis1);
+
+			dataProp = new Properties();
+			FileInputStream dataFis = new FileInputStream("./src/main/java/com/book/testdata/testdata.properties");
+			dataProp.load(dataFis);
+
+		} catch (FileNotFoundException e) {
+			e.printStackTrace();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+	}
+	
+	public static WebDriver initializeBrowser() {
+
+		String browserName = prop.getProperty("browserName");
+		String myUrl = prop.getProperty("url");
 		
 
 		if (browserName.equalsIgnoreCase("chrome")) {
@@ -51,9 +73,10 @@ public class TestBase {
 
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
-
+		
 		driver.get(myUrl);
 		return driver;
 	}
+
 
 }
