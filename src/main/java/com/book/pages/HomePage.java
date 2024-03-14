@@ -1,6 +1,5 @@
 package com.book.pages;
 
-import org.openqa.selenium.Alert;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,16 +12,9 @@ public class HomePage {
 	WebDriver driver;
 	public JavascriptExecutor js;
 	Actions actions;
-	Alert alert;
 
 	@FindBy(xpath = "//figure[@class='header__topBar_logo']")
 	WebElement urbanLadderLogo;
-
-	@FindBy(xpath = "//input[@id='search']")
-	WebElement searchBar;
-
-	@FindBy(xpath = "//button[@id='search_button']")
-	WebElement searchBtn;
 
 	@FindBy(xpath = "//li[@class='header__topBarIconList_profile-icon']")
 	WebElement accountDropMenu;
@@ -34,26 +26,8 @@ public class HomePage {
 	WebElement loginVerify;
 
 	// Objects
-	@FindBy(xpath = "//a[@class='category']//h4[contains(text(), 'Bookshelves')]")
-	WebElement bookshelveIcon;
-
-	@FindBy(xpath = "//h1[contains(text(),'Bookshelves')]")
-	WebElement verifyBookshelvePage;
-
-	@FindBy(xpath = "//a[contains(text(),'Close')]")
-	WebElement closePopup;
-
-	@FindBy(xpath = "//div[contains(text(), 'Price')]")
-	WebElement priceOption;
-
-	@FindBy(xpath = "//div[@class='noUi-handle noUi-handle-upper']")
-	WebElement slider;
-
-	@FindBy(xpath = "//div[contains(text(), 'Storage Type')]")
-	WebElement storageOption;
-
-	@FindBy(xpath = "//input[@id='filters_storage_type_Open']")
-	WebElement selectOpenFilter;
+	@FindBy(xpath = "//a[@class='category']//h4[contains(text(), 'Wardrobes')]")
+	WebElement wardrobeIcon;
 
 	public HomePage(WebDriver driver) {
 
@@ -74,32 +48,18 @@ public class HomePage {
 
 	}
 
-	public void clickOnBookShelve() throws InterruptedException {
+	public boolean verifyLogo() {
+		return urbanLadderLogo.isDisplayed();
+	}
+
+	public SearchPage navigateToSearchPage() {
+		return new SearchPage(driver);
+	}
+
+	public WardrobePage navigateToWardrobeSection() {
 		js.executeScript("window.scrollBy(0,700)");
-		bookshelveIcon.click();
-		Thread.sleep(2000);
+		wardrobeIcon.click();
+		return new WardrobePage(driver);
 	}
 
-	public void switchToAlert() {
-		alert = driver.switchTo().alert();
-		alert.dismiss();
-
-	}
-
-	public String verifyBookshelvePage() {
-		return verifyBookshelvePage.getText();
-
-	}
-
-	public void selectPriceOption() throws InterruptedException {
-		actions.moveToElement(priceOption).build().perform();
-		Thread.sleep(3000);
-		actions.dragAndDropBy(slider, -280, 0).perform();
-
-	}
-
-	public void selectStorageOption() {
-		storageOption.click();
-		selectOpenFilter.click();
-	}
 }
