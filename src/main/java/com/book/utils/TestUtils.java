@@ -5,6 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
@@ -14,6 +15,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.io.FileHandler;
 
 public class TestUtils {
@@ -38,8 +40,19 @@ public class TestUtils {
 		return destinationScreenshotPath;
 	}
 	
+	public static void printProductNameAndPrice(List<WebElement> productSizeList, List<WebElement> productPriceList,
+			int size) {
+		for (int i = 0; i < size; i++) {
+			String productName = productSizeList.get(i).getText();
+			String productPrice = productPriceList.get(i).getText();
+			System.out.println("Product-Name: " + productName);
+			System.out.println("Product-Price: " + productPrice);
+
+		}
+	}
+	
 	public static Object[][] getTestDataFromExcel(String sheetName) {
-		File excelFile = new File("./src/main/java/com/qa/testdata/HybridTestData.xlsx");
+		File excelFile = new File("./src/main/java/com/book/testdata/BookTestData.xlsx");
 		XSSFWorkbook workbook = null;
 		try {
 			FileInputStream fisExcel = new FileInputStream(excelFile);

@@ -11,12 +11,15 @@ import org.testng.annotations.Test;
 import com.book.base.TestBase;
 import com.book.pages.HomePage;
 import com.book.pages.WardrobePage;
+import com.book.utils.LoggerUtil;
+import com.book.utils.TestUtils;
 
 public class WardrobeTest extends TestBase {
 
 	WebDriver driver;
 	HomePage homePage;
 	WardrobePage wardrobePage;
+	LoggerUtil log;
 
 	public WardrobeTest() {
 		super();
@@ -25,42 +28,41 @@ public class WardrobeTest extends TestBase {
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowser();
+		log = new LoggerUtil();
 		homePage = new HomePage(driver);
 		wardrobePage = homePage.navigateToWardrobeSection();
 	}
 
-	public void printProductNameAndPrice(List<WebElement> productSizeList, List<WebElement> productPriceList,
-			int size) {
-		for (int i = 0; i < size; i++) {
-			String productName = productSizeList.get(i).getText();
-			String productPrice = productPriceList.get(i).getText();
-			System.out.println("Product-Name: " + productName);
-			System.out.println("Product-Price: " + productPrice);
-
-		}
-	}
-
 	@Test(priority = 0)
-	public void warDrobeTest() throws InterruptedException {
+	public void wardrobeTest() throws InterruptedException {
 
-		Thread.sleep(5000);
+		log.info("WarDrobe Test Started");
+		
 		wardrobePage.switchToPopup();
+		log.info("Close the Popup window");
 
 		wardrobePage.verifyWardrobePage();
+		log.info("Wardrobe Page Verify Successfully");
 
 		wardrobePage.selectPriceOption();
+		log.info("Set the Price Filter");
 
 		wardrobePage.selectBrandOption();
+		log.info("Set the Brand Filter");
 
 		wardrobePage.selectDoorOption();
+		log.info("Set the Door Filter");
 
 		wardrobePage.selectMaterialOption();
+		log.info("Set the Material Filter");
 		
-		List<WebElement> wardrobe = wardrobePage.wardrobeProductNameList();
+		List<WebElement> wardrobeProducts = wardrobePage.wardrobeProductNameList();
 		
 		List<WebElement> prices = wardrobePage.wardrobePriceList();
 		
-		printProductNameAndPrice(wardrobe, prices, 5);
+		log.info("Wardrobe Filter Results Printed Here: ");
+		log.info("Total products: " + wardrobeProducts.size());
+		TestUtils.printProductNameAndPrice(wardrobeProducts, prices, 5);
 		
 	}
 

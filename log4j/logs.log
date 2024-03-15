@@ -41,3 +41,102 @@
 02:51:31.638 [main] INFO  - Verify HomePage Logo
 11:06:45.390 [main] INFO  - Verify HomePage Logo
 11:08:07.257 [main] INFO  - Verify HomePage Logo
+18:26:17.021 [main] INFO  - Logged into Website
+18:26:17.027 [main] INFO  - Start the Search Test
+18:26:26.947 [main] INFO  - Search Results Fetch from Site
+18:26:26.963 [main] ERROR - Exception occured
+java.lang.Exception: Element Not Found
+	at com.book.testcases.SearchTest.navigateToSearchTest(SearchTest.java:69) [test-classes/:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[?:?]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[?:?]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[?:?]
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511) [?:?]
+	at org.testng.TestRunner.privateRun(TestRunner.java:794) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestRunner.run(TestRunner.java:596) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.runSuites(TestNG.java:1063) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.TestNG.run(TestNG.java:1031) [org.testng_7.4.0.r202105021533.jar:7.4.0]
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251) [testng-remote.jar:?]
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77) [testng-remote.jar:?]
+18:26:27.009 [main] INFO  - Test completed successfully
+18:26:27.113 [main] INFO  - Test Stop
+18:27:02.628 [main] INFO  - Logged into Website
+18:27:02.632 [main] INFO  - Start the Search Test
+18:27:13.088 [main] INFO  - Search Results Fetch from Site
+18:27:13.147 [main] INFO  - Test completed successfully
+18:27:13.255 [main] INFO  - Test Stop
+20:31:51.138 [main] INFO  - Start the Search Test
+20:32:01.054 [main] INFO  - Search Results Fetch from Site
+20:32:01.197 [main] INFO  - End The Search Test
+20:32:51.995 [main] INFO  - Start the Search Test
+20:33:02.409 [main] INFO  - Search Results Fetch from Site
+20:33:02.689 [main] INFO  - Test completed successfully
+20:33:02.795 [main] INFO  - End The Search Test
+20:42:53.727 [main] INFO  - WarDrobe Test Started
+20:42:56.509 [main] INFO  - Close the Popup window
+20:42:56.524 [main] INFO  - Wardrobe Page Verify Successfully
+20:42:59.109 [main] INFO  - Set the Price Filter
+20:43:01.330 [main] INFO  - Set the Brand Filter
+20:43:03.513 [main] INFO  - Set the Door Filter
+20:43:03.693 [main] INFO  - Set the Material Filter
+20:43:03.709 [main] INFO  - Wardrobe Filter Results Printed Here: 
+20:43:03.710 [main] INFO  - Total products: [[[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span], [[ChromeDriver: chrome on mac (2cf8bdcad4701f5dbcc5525d3c8de146)] -> xpath: //*[@class='product-title product-title-sofa-mattresses']/span]]
+20:44:02.120 [main] INFO  - WarDrobe Test Started
+20:44:04.908 [main] INFO  - Close the Popup window
+20:44:04.923 [main] INFO  - Wardrobe Page Verify Successfully
+20:44:07.516 [main] INFO  - Set the Price Filter
+20:44:09.724 [main] INFO  - Set the Brand Filter
+20:44:11.917 [main] INFO  - Set the Door Filter
+20:44:12.103 [main] INFO  - Set the Material Filter
+20:44:12.122 [main] INFO  - Wardrobe Filter Results Printed Here: 
+20:44:12.123 [main] INFO  - Total products: 30
+20:48:13.005 [main] INFO  - Start the Search Test
+20:48:14.170 [main] INFO  - Searching... wardrobe in Search Input
+20:48:14.285 [main] INFO  - Search page Verified Successfully
+20:48:14.290 [main] INFO  - Scroll to View Products Successfully
+20:48:17.305 [main] INFO  - Close the popup
+20:48:19.522 [main] INFO  - Search Categroy Filter
+20:48:23.087 [main] INFO  - Search Price Filter
+20:48:23.088 [main] INFO  - Search Results Fetch from Site
+20:48:23.114 [main] INFO  - Total number of products: 30
+20:48:23.385 [main] INFO  - Test completed successfully
+20:48:23.489 [main] INFO  - End The Search Test
+21:01:10.968 [main] INFO  - Start the Search Test
+21:01:12.181 [main] INFO  - Searching... wardrobe in Search Input
+21:01:12.283 [main] INFO  - Search page Verified Successfully
+21:01:12.287 [main] INFO  - Scroll to View Products Successfully
+21:01:15.287 [main] INFO  - Close the popup
+21:01:17.481 [main] INFO  - Search Categroy Filter
+21:01:21.068 [main] INFO  - Search Price Filter
+21:01:21.069 [main] INFO  - Search Results Fetch from Site
+21:01:21.108 [main] INFO  - Total number of products: 30
+21:01:21.361 [main] INFO  - Test completed successfully
+21:01:21.461 [main] INFO  - End The Search Test
+21:02:13.493 [main] INFO  - Start the Search Test
+21:02:14.665 [main] INFO  - Searching... wardrobe in Search Input
+21:02:14.808 [main] INFO  - Search page Verified Successfully
+21:02:14.813 [main] INFO  - Scroll to View Products Successfully
+21:02:17.821 [main] INFO  - Close the popup
+21:02:20.053 [main] INFO  - Search Categroy Filter
+21:02:23.636 [main] INFO  - Search Price Filter
+21:02:23.636 [main] INFO  - Search Results Fetch from Site
+21:02:23.660 [main] INFO  - Total number of products: 30
+21:02:23.935 [main] INFO  - Test completed successfully
+21:02:24.038 [main] INFO  - End The Search Test

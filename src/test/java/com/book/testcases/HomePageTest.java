@@ -10,12 +10,14 @@ import org.testng.annotations.Test;
 
 import com.book.base.TestBase;
 import com.book.pages.HomePage;
+import com.book.pages.LoginPage;
 import com.book.report.ReportGenerator;
 
 public class HomePageTest extends TestBase {
 
 	public WebDriver driver;
 	HomePage homePage;
+	LoginPage loginPage;
 	public static Logger log;
 	ReportGenerator report;
 
@@ -30,30 +32,18 @@ public class HomePageTest extends TestBase {
 		report = new ReportGenerator();
 		homePage = new HomePage(driver);
 		log = LogManager.getLogger(HomePageTest.class);
-		
 
 	}
 
 	@Test(priority = 0)
 	public void navigateToHomePage() throws InterruptedException {
 
-		log.info("Verify HomePage Logo");
-		report.testName("NaviGate to HomePage");
+		log.info("Start The Test");
+
 		Assert.assertTrue(homePage.verifyLogo());
-		
-		report.logsInfo("Close the pop-up");
-		
 
-	}
-
-	@Test(priority = 1, enabled = false)
-	public void navigateToLoginPage() throws InterruptedException {
-	
-		homePage.clickOnLoginDropdownMenu();
-
-		String verifyLogin = homePage.verifyLoginPage();
+		log.info("Navigate To Home Page");
 		
-		Assert.assertEquals(verifyLogin, "Login with your email ID");
 	}
 
 	@AfterMethod

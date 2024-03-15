@@ -4,13 +4,12 @@
 
 	<listeners>
 		<listener class-name="com.book.report.ReportGenerator" />
-		<listener
-			class-name="com.book.report.MyAnnotationTransformer" />
+		<listener class-name="com.book.report.MyAnnotationTransformer" />
 	</listeners>
 
 	<test thread-count="5" name="Test">
 		<classes>
-			<class name="com.book.testcases.HomePageTest" />
+			<class name="com.book.testcases.GiftCardTest" />
 		</classes>
 	</test> <!-- Test -->
 </suite> <!-- Suite -->

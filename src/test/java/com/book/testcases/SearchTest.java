@@ -2,7 +2,6 @@ package com.book.testcases;
 
 import java.util.List;
 
-import org.apache.logging.log4j.*;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
@@ -13,24 +12,21 @@ import org.testng.annotations.Test;
 import com.book.base.TestBase;
 import com.book.pages.HomePage;
 import com.book.pages.SearchPage;
-import com.book.report.ReportGenerator;
+import com.book.utils.LoggerUtil;
 
 public class SearchTest extends TestBase {
 
 	WebDriver driver;
 	HomePage homePage;
 	SearchPage searchPage;
-	public static Logger log;
-	public ReportGenerator report;
+	LoggerUtil log;
 
 	@BeforeMethod
 	public void setUp() {
 		driver = initializeBrowser();
+		log = new LoggerUtil();
 		homePage = new HomePage(driver);
-		searchPage = homePage.navigateToSearchPage();
-		report = new ReportGenerator();
-		log = LogManager.getLogger(SearchTest.class);
-		log.info("Logged into Website");
+		searchPage = homePage.navigateToSearchPage();	
 	}
 
 	public void printProductNameAndPrice(List<WebElement> productSizeList, List<WebElement> productPriceList,
@@ -40,46 +36,47 @@ public class SearchTest extends TestBase {
 			String productPrice = productPriceList.get(i).getText();
 			System.out.println("Product-Name: " + productName);
 			System.out.println("Product-Price: " + productPrice);
-
 		}
 	}
 
 	@Test
-	public void homePage() throws InterruptedException {
+	public void navigateToSearchTest() throws InterruptedException {
 
-		log.info("Start the Test");
-		report.testName("Start from HomePage");
-
+		log.info("Start the Search Test");
+	
 		searchPage.searchAndFind("wardrobe");
+		log.info("Searching... wardrobe in Search Input");
 
 		String searchVerify = searchPage.verifySearchPage();
+		log.info("Search page Verified Successfully");
 
 		searchPage.scrollToViewProducts();
+		log.info("Scroll to View Products Successfully");
 
 		searchPage.switchToPopup();
+		log.info("Close the popup");
 
 		searchPage.selectContactOption();
+		log.info("Search Categroy Filter");
 
 		searchPage.selectPriceOption();
+		log.info("Search Price Filter");
 
 		log.info("Search Results Fetch from Site");
-		report.testName("Search Results Fetch from Site");
 		Assert.assertEquals(searchVerify, "Search Results For 'Wardrobe'");
 
-		List<WebElement> wardrobe = searchPage.wardrobeProductNameList();
-
-//		log.error("Exception occured", new Exception ("Element Not Found"));
+		List<WebElement> wardrobeProducts = searchPage.wardrobeProductNameList();
 
 		List<WebElement> prices = searchPage.wardrobePriceList();
-
-		printProductNameAndPrice(wardrobe, prices, 3);
-		report.testName("Test completed successfully");
+		
+		log.info("Total number of products: " + wardrobeProducts.size());
+		printProductNameAndPrice(wardrobeProducts, prices, wardrobeProducts.size());
+		log.info("Test completed successfully");
 	}
 
 	@AfterMethod
 	public void tearDown() {
 		driver.quit();
-		log.info("Test Stop");
-		report.testName("Test Stop");
+		log.info("End The Search Test");
 	}
 }

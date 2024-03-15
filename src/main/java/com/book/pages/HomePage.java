@@ -22,9 +22,6 @@ public class HomePage {
 	@FindBy(xpath = "//a[@id='header-icon-login']")
 	WebElement loginBtn;
 
-	@FindBy(xpath = "//div[contains(text(),'Login with your email ID')]")
-	WebElement loginVerify;
-
 	@FindBy(xpath = "//a[@class='category']//h4[contains(text(), 'Wardrobes')]")
 	WebElement wardrobeIcon;
 
@@ -32,7 +29,6 @@ public class HomePage {
 	WebElement giftCardLink;
 
 	public HomePage(WebDriver driver) {
-
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		actions = new Actions(driver);
@@ -45,13 +41,16 @@ public class HomePage {
 		loginBtn.click();
 	}
 
-	public String verifyLoginPage() {
-		return loginVerify.getText();
-
-	}
-
 	public boolean verifyLogo() {
 		return urbanLadderLogo.isDisplayed();
+	}
+
+	public LoginPage navigateToLoginPage() throws InterruptedException {
+		Thread.sleep(2000);
+		actions.moveToElement(accountDropMenu).build().perform();
+		Thread.sleep(2000);
+		loginBtn.click();
+		return new LoginPage(driver);
 	}
 
 	public SearchPage navigateToSearchPage() {

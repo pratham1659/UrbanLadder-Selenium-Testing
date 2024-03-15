@@ -7,13 +7,13 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.book.testcases.SearchTest">
+      <class name="com.book.testcases.GiftCardTest">
         <methods>
-          <include name="homePage"/>
-          <include name="tearDown"/>
           <include name="setUp"/>
+          <include name="testGiftCard"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- com.book.testcases.SearchTest -->
+      </class> <!-- com.book.testcases.GiftCardTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

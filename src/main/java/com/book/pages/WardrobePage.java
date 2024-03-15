@@ -1,6 +1,7 @@
 package com.book.pages;
 
-import java.util.*;
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -9,6 +10,7 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import com.book.action.ActionDriver;
 import com.book.base.TestBase;
 
 public class WardrobePage extends TestBase {
@@ -16,6 +18,7 @@ public class WardrobePage extends TestBase {
 	WebDriver driver;
 	public JavascriptExecutor js;
 	Actions actions;
+	ActionDriver actionDriver;
 
 	@FindBy(xpath = "//h1[contains(text(),'Wardrobes')]")
 	WebElement verifyWardrobePage;
@@ -54,10 +57,12 @@ public class WardrobePage extends TestBase {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		actions = new Actions(driver);
+		actionDriver = new ActionDriver(driver);
 		js = (JavascriptExecutor) driver;
 	}
 
-	public void switchToPopup() {
+	public void switchToPopup() throws InterruptedException {
+		Thread.sleep(2000);
 		closePopup.click();
 	}
 
@@ -67,29 +72,29 @@ public class WardrobePage extends TestBase {
 
 	public void selectPriceOption() throws InterruptedException {
 		actions.moveToElement(priceOption).build().perform();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		actions.dragAndDropBy(slider, -280, 0).perform();
 
 	}
 
 	public void selectBrandOption() throws InterruptedException {
 		actions.moveToElement(BrandOption).build().perform();
-		Thread.sleep(3000);
+		Thread.sleep(2000);
 		selectBrandFilter.click();
 	}
-
+	
 	public void selectDoorOption() throws InterruptedException {
+		Thread.sleep(2000);
 		actions.moveToElement(NoOfDoorOption).build().perform();
-		Thread.sleep(3000);
 		selectDoorFilter.click();
 	}
 
-	public void selectMaterialOption() throws InterruptedException {
+	public void selectMaterialOption() {
+		actionDriver.setExplicitWait(driver, materialOption, 20);
 		actions.moveToElement(materialOption).build().perform();
-		Thread.sleep(3000);
 		selectMaterialOption.click();
 	}
-	
+
 	public void scrollToViewProducts() {
 		js.executeScript("window.scrollBy(0,700)");
 		WebElement navbar = driver.findElement(By.id("topnav_wrapper"));
@@ -99,8 +104,8 @@ public class WardrobePage extends TestBase {
 	public List<WebElement> wardrobeProductNameList() {
 		return driver.findElements(By.xpath("//*[@class='product-title product-title-sofa-mattresses']/span"));
 	}
-	
-	public List<WebElement> wardrobePriceList(){
+
+	public List<WebElement> wardrobePriceList() {
 		return driver.findElements(By.xpath("//*[@class='price-number']/span"));
 	}
 
