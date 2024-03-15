@@ -16,7 +16,7 @@ Selenium Tool, Java, JavaScript, HTML, CSS
 - Logger for every testCase execute
 
 
-![Console_screenshots](https://github.com/pratham1659/UrbanLadder-Selenium-Testing/blob/main/screenshots/Console_screenshots.png?raw=true)
+![RoadMap_screenshots](https://github.com/pratham1659/UrbanLadder-Selenium-Testing/blob/main/screenshots/Wardrobe%20Testing.png?raw=true)
 
 
 ## Screenshots
