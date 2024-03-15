@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
 
+import org.apache.log4j.PropertyConfigurator;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
@@ -46,6 +47,8 @@ public class TestBase {
 
 		String browserName = prop.getProperty("browserName");
 		String myUrl = prop.getProperty("url");
+		String log4jConfPath = "./src/main/resources/log4j2.properties";
+		PropertyConfigurator.configure(log4jConfPath);
 		
 
 		if (browserName.equalsIgnoreCase("chrome")) {

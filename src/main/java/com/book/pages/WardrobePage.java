@@ -1,7 +1,7 @@
 package com.book.pages;
 
-import java.util.Set;
-
+import java.util.*;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -11,16 +11,16 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.book.base.TestBase;
 
-public class WardrobePage extends TestBase{
-	
+public class WardrobePage extends TestBase {
+
 	WebDriver driver;
 	public JavascriptExecutor js;
 	Actions actions;
-	
+
 	@FindBy(xpath = "//h1[contains(text(),'Wardrobes')]")
 	WebElement verifyWardrobePage;
 
-	@FindBy(xpath = "//a[contains(text(),'Close')]")
+	@FindBy(partialLinkText = "Close")
 	WebElement closePopup;
 
 	@FindBy(xpath = "//div[contains(text(), 'Price')]")
@@ -29,31 +29,40 @@ public class WardrobePage extends TestBase{
 	@FindBy(xpath = "//div[@class='noUi-handle noUi-handle-upper']")
 	WebElement slider;
 
-	@FindBy(xpath = "//div[contains(text(), 'Storage Type')]")
-	WebElement storageOption;
+	@FindBy(xpath = "//div[@class='gname' and contains(text(),'Brand')]")
+	WebElement BrandOption;
 
-	@FindBy(xpath = "//input[@id='filters_storage_type_Open']")
-	WebElement selectOpenFilter;
-	
+	@FindBy(xpath = "//input[@id='filters_brand_name_By_Trevi']")
+	WebElement selectBrandFilter;
+
+	@FindBy(xpath = "//div[@class='gname' and contains(text(),'No of Doors')]")
+	WebElement NoOfDoorOption;
+
+	@FindBy(xpath = "//input[@id='filters_num_doors_2']")
+	WebElement selectDoorFilter;
+
+	@FindBy(xpath = "//div[@class='gname' and contains(text(),'Material')]")
+	WebElement materialOption;
+
+	@FindBy(xpath = "//input[@id='filters_material_Engineered_Wood']")
+	WebElement selectMaterialOption;
+
+	@FindBy(xpath = "//*[@class='product-title product-title-sofa-mattresses']/span")
+	WebElement wardrobeList;
+
 	public WardrobePage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		actions = new Actions(driver);
+		js = (JavascriptExecutor) driver;
 	}
-	
-	public void switchToPopup() throws InterruptedException {
-		Set<String> windowHandles = driver.getWindowHandles();
-		System.out.println("Number of opened windows: " + windowHandles.size());
 
-		for (String str : windowHandles) {
-			driver.switchTo().window(str);
-			closePopup.click();
-
-		}
+	public void switchToPopup() {
+		closePopup.click();
 	}
-	
+
 	public String verifyWardrobePage() {
 		return verifyWardrobePage.getText();
-
 	}
 
 	public void selectPriceOption() throws InterruptedException {
@@ -63,11 +72,36 @@ public class WardrobePage extends TestBase{
 
 	}
 
-	public void selectStorageOption() {
-		storageOption.click();
-		selectOpenFilter.click();
+	public void selectBrandOption() throws InterruptedException {
+		actions.moveToElement(BrandOption).build().perform();
+		Thread.sleep(3000);
+		selectBrandFilter.click();
+	}
+
+	public void selectDoorOption() throws InterruptedException {
+		actions.moveToElement(NoOfDoorOption).build().perform();
+		Thread.sleep(3000);
+		selectDoorFilter.click();
+	}
+
+	public void selectMaterialOption() throws InterruptedException {
+		actions.moveToElement(materialOption).build().perform();
+		Thread.sleep(3000);
+		selectMaterialOption.click();
 	}
 	
+	public void scrollToViewProducts() {
+		js.executeScript("window.scrollBy(0,700)");
+		WebElement navbar = driver.findElement(By.id("topnav_wrapper"));
+		js.executeScript("arguments[0].scrollIntoView();", navbar);
+	}
+
+	public List<WebElement> wardrobeProductNameList() {
+		return driver.findElements(By.xpath("//*[@class='product-title product-title-sofa-mattresses']/span"));
+	}
 	
+	public List<WebElement> wardrobePriceList(){
+		return driver.findElements(By.xpath("//*[@class='price-number']/span"));
+	}
 
 }

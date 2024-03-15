@@ -1,0 +1,43 @@
+00:57:01.119 [main] INFO  - Logged into Website
+00:57:01.129 [main] INFO  - Test Start
+00:57:11.329 [main] INFO  - Search Results Fetch from Site
+00:57:11.482 [main] INFO  - Test Stop
+01:18:10.591 [main] INFO  - Logged into Website
+01:18:10.705 [main] INFO  - Test Stop
+01:21:02.972 [main] INFO  - Navigate to HomePage
+01:21:04.459 [main] INFO  - Navigate to HomePage
+01:27:44.556 [main] INFO  - Navigate to HomePage
+01:29:23.315 [main] INFO  - Navigate to HomePage
+01:29:23.322 [main] INFO  - Verify HomePage Logo
+01:29:53.611 [main] INFO  - Navigate to HomePage
+01:29:53.615 [main] INFO  - Verify HomePage Logo
+01:48:53.469 [main] INFO  - Navigate to HomePage
+01:48:53.476 [main] INFO  - Verify HomePage Logo
+01:51:26.700 [main] INFO  - Logged into Website
+01:51:26.704 [main] INFO  - Start the Test
+01:51:36.718 [main] INFO  - Search Results Fetch from Site
+01:51:36.875 [main] INFO  - Test Stop
+01:51:52.403 [main] INFO  - Navigate to HomePage
+01:51:52.411 [main] INFO  - Verify HomePage Logo
+01:53:29.142 [main] INFO  - Navigate to HomePage
+01:53:29.149 [main] INFO  - Verify HomePage Logo
+02:17:01.977 [main] INFO  - Navigate to HomePage
+02:17:02.003 [main] INFO  - Verify HomePage Logo
+02:17:04.712 [main] INFO  - Logged into Website
+02:17:04.715 [main] INFO  - Start the Test
+02:17:14.943 [main] INFO  - Search Results Fetch from Site
+02:17:15.112 [main] INFO  - Test Stop
+02:30:46.172 [main] INFO  - Navigate to HomePage
+02:30:46.188 [main] INFO  - Verify HomePage Logo
+02:44:53.189 [main] INFO  - Navigate to HomePage
+02:44:53.200 [main] INFO  - Verify HomePage Logo
+02:46:43.868 [main] INFO  - Logged into Website
+02:46:43.875 [main] INFO  - Start the Test
+02:46:53.814 [main] INFO  - Test Stop
+02:46:55.217 [main] INFO  - Logged into Website
+02:46:55.221 [main] INFO  - Start the Test
+02:47:06.203 [main] INFO  - Search Results Fetch from Site
+02:47:06.358 [main] INFO  - Test Stop
+02:51:31.638 [main] INFO  - Verify HomePage Logo
+11:06:45.390 [main] INFO  - Verify HomePage Logo
+11:08:07.257 [main] INFO  - Verify HomePage Logo

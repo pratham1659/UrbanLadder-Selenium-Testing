@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="1" total="2" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-14T13:24:40 IST" name="Default suite" finished-at="2024-03-14T13:24:49 IST" duration-ms="9604">
+  <suite started-at="2024-03-15T11:08:03 IST" name="Suite" finished-at="2024-03-15T11:08:07 IST" duration-ms="4337">
     <groups>
     </groups>
-    <test started-at="2024-03-14T13:24:40 IST" name="Default test" finished-at="2024-03-14T13:24:49 IST" duration-ms="9604">
-      <class name="com.book.testcases.WardrobeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.WardrobeTest@bef2d72]" started-at="2024-03-14T13:24:40 IST" name="setUp" finished-at="2024-03-14T13:24:44 IST" duration-ms="4383" status="PASS">
+    <test started-at="2024-03-15T11:08:03 IST" name="Test" finished-at="2024-03-15T11:08:07 IST" duration-ms="4337">
+      <class name="com.book.testcases.HomePageTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.HomePageTest@793f29ff]" started-at="2024-03-15T11:08:03 IST" name="setUp" finished-at="2024-03-15T11:08:07 IST" duration-ms="4119" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="warDrobeTest()[pri:0, instance:com.book.testcases.WardrobeTest@bef2d72]" started-at="2024-03-14T13:24:44 IST" name="warDrobeTest" finished-at="2024-03-14T13:24:49 IST" duration-ms="5091" status="PASS">
+        <test-method signature="navigateToHomePage()[pri:0, instance:com.book.testcases.HomePageTest@793f29ff]" started-at="2024-03-15T11:08:07 IST" name="navigateToHomePage" finished-at="2024-03-15T11:08:07 IST" duration-ms="82" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- warDrobeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.WardrobeTest@bef2d72]" started-at="2024-03-14T13:24:49 IST" name="tearDown" finished-at="2024-03-14T13:24:49 IST" duration-ms="112" status="PASS">
+        </test-method> <!-- navigateToHomePage -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.HomePageTest@793f29ff]" started-at="2024-03-15T11:08:07 IST" name="tearDown" finished-at="2024-03-15T11:08:07 IST" duration-ms="108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.book.testcases.WardrobeTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.book.testcases.HomePageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

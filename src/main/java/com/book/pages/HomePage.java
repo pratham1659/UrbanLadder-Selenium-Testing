@@ -25,9 +25,11 @@ public class HomePage {
 	@FindBy(xpath = "//div[contains(text(),'Login with your email ID')]")
 	WebElement loginVerify;
 
-	// Objects
 	@FindBy(xpath = "//a[@class='category']//h4[contains(text(), 'Wardrobes')]")
 	WebElement wardrobeIcon;
+
+	@FindBy(linkText = "Gift Cards")
+	WebElement giftCardLink;
 
 	public HomePage(WebDriver driver) {
 
@@ -60,6 +62,11 @@ public class HomePage {
 		js.executeScript("window.scrollBy(0,700)");
 		wardrobeIcon.click();
 		return new WardrobePage(driver);
+	}
+
+	public GiftCardPage navigateToGiftCard() {
+		giftCardLink.click();
+		return new GiftCardPage(driver);
 	}
 
 }

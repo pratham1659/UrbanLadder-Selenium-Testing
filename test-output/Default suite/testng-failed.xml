@@ -7,7 +7,7 @@
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="scrollClickAndSearch"/>
+          <include name="navigateToLoginPage"/>
         </methods>
       </class> <!-- com.book.testcases.HomePageTest -->
     </classes>
