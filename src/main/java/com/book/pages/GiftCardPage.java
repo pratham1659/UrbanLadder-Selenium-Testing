@@ -129,9 +129,13 @@ public class GiftCardPage {
 		pincodeField.sendKeys(pin);
 	}
 	
+	public boolean giftCardBtn() {
+		return confirmButton.isEnabled();
+	}
+	
 	public void giftCardConfirmBtn(String message) {
 		textAreaField.sendKeys(message);
-//		confirmButton.click();
+		confirmButton.click();
 	}
 
 }

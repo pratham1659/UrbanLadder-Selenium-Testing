@@ -140,3 +140,155 @@ java.lang.Exception: Element Not Found
 21:02:23.660 [main] INFO  - Total number of products: 30
 21:02:23.935 [main] INFO  - Test completed successfully
 21:02:24.038 [main] INFO  - End The Search Test
+21:52:53.502 [main] INFO  - Start The Test
+21:52:53.523 [main] INFO  - Welcome To Home Page
+21:54:14.606 [main] INFO  - Navigate to Login Page
+21:54:36.174 [main] INFO  - Navigate to Login Page
+22:00:36.001 [main] INFO  - Navigate to Login Page
+22:01:10.296 [main] INFO  - Navigate to Login Page
+22:01:13.331 [main] INFO  - Verify Login Page
+22:04:01.447 [main] INFO  - Navigate to Login Page
+22:04:37.632 [main] INFO  - Navigate to Login Page
+22:04:40.676 [main] INFO  - Verify Login Page Successfully
+22:09:03.317 [main] INFO  - Navigate to Login Page
+22:09:09.573 [main] INFO  - Verify Login Page Successfully
+22:17:06.383 [main] INFO  - Navigate to Login Page
+22:17:12.585 [main] INFO  - Verify Login Page Successfully
+22:19:11.247 [main] INFO  - Navigate to Login Page
+22:19:17.476 [main] INFO  - Verify Login Page Successfully
+22:19:18.326 [main] INFO  - Login Successfully
+22:46:47.113 [main] INFO  - Start The Test
+22:46:47.135 [main] INFO  - Welcome To Home Page
+22:46:50.848 [main] INFO  - Navigate to Login Page
+22:46:57.059 [main] INFO  - Verify Login Page Successfully
+22:46:58.268 [main] INFO  - Login Successfully
+22:47:08.060 [main] INFO  - Navigate to Profile Page
+22:47:08.128 [main] INFO  - Login Status Verfied
+22:47:13.882 [main] INFO  - Start the Search Test
+22:47:15.064 [main] INFO  - Searching... wardrobe in Search Input
+22:47:15.081 [main] INFO  - Search page Verified Successfully
+22:47:15.085 [main] INFO  - Scroll to View Products Successfully
+22:47:18.100 [main] INFO  - Close the popup
+22:47:20.317 [main] INFO  - Search Categroy Filter
+22:47:23.899 [main] INFO  - Search Price Filter
+22:47:23.899 [main] INFO  - Search Results Fetch from Site
+22:47:23.922 [main] INFO  - Total number of products: 30
+22:47:24.162 [main] INFO  - Test completed successfully
+22:47:24.277 [main] INFO  - End The Search Test
+22:47:30.393 [main] INFO  - WarDrobe Test Started
+22:47:33.048 [main] INFO  - Close the Popup window
+22:47:33.065 [main] INFO  - Wardrobe Page Verify Successfully
+22:47:35.659 [main] INFO  - Set the Price Filter
+22:47:37.882 [main] INFO  - Set the Brand Filter
+22:47:40.090 [main] INFO  - Set the Door Filter
+22:47:40.282 [main] INFO  - Set the Material Filter
+22:47:40.299 [main] INFO  - Wardrobe Filter Results Printed Here: 
+22:47:40.299 [main] INFO  - Total products: 30
+22:55:15.815 [main] INFO  - Navigate to GiftCard Page
+22:55:18.854 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+22:57:33.818 [main] INFO  - Navigate to GiftCard Page
+22:57:36.833 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+22:57:47.159 [main] INFO  - Navigate to GiftCard Page
+22:57:49.869 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:06:46.278 [main] INFO  - Navigate to GiftCard Page
+23:06:46.468 [main] INFO  - Click on Wedding GiftCard
+23:06:48.742 [main] INFO  - Filled GiftCard form Succesfully
+23:06:49.106 [main] INFO  - Filled Recipient Details
+23:06:49.269 [main] INFO  - Filled Sender Details
+23:06:49.284 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:06:58.036 [main] INFO  - Navigate to GiftCard Page
+23:06:58.226 [main] INFO  - Click on Wedding GiftCard
+23:07:00.490 [main] INFO  - Filled GiftCard form Succesfully
+23:07:00.604 [main] INFO  - Filled Recipient Details
+23:07:00.758 [main] INFO  - Filled Sender Details
+23:07:00.772 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:07:09.909 [main] INFO  - Handling Pincode Error in Sender form
+23:07:16.011 [main] INFO  - Handling Recipent Mobile Error in form
+23:07:16.094 [main] INFO  - Gift Card Sent Successfully
+23:10:57.449 [main] INFO  - Navigate to GiftCard Page
+23:10:57.628 [main] INFO  - Click on Wedding GiftCard
+23:10:59.898 [main] INFO  - Filled GiftCard form Succesfully
+23:11:00.259 [main] INFO  - Filled Recipient Details
+23:11:00.422 [main] INFO  - Filled Sender Details
+23:11:00.436 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:11:06.727 [main] INFO  - Navigate to GiftCard Page
+23:11:06.918 [main] INFO  - Click on Wedding GiftCard
+23:11:09.173 [main] INFO  - Filled GiftCard form Succesfully
+23:11:09.293 [main] INFO  - Filled Recipient Details
+23:11:09.449 [main] INFO  - Filled Sender Details
+23:11:09.464 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:11:20.681 [main] INFO  - Navigate to GiftCard Page
+23:11:20.862 [main] INFO  - Click on Wedding GiftCard
+23:11:23.129 [main] INFO  - Filled GiftCard form Succesfully
+23:11:23.247 [main] INFO  - Filled Recipient Details
+23:11:23.393 [main] INFO  - Filled Sender Details
+23:11:23.417 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:11:28.877 [main] INFO  - Navigate to GiftCard Page
+23:11:29.062 [main] INFO  - Click on Wedding GiftCard
+23:11:31.317 [main] INFO  - Filled GiftCard form Succesfully
+23:11:31.445 [main] INFO  - Filled Recipient Details
+23:11:31.590 [main] INFO  - Filled Sender Details
+23:11:31.621 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:11:37.510 [main] INFO  - Navigate to GiftCard Page
+23:11:37.701 [main] INFO  - Click on Wedding GiftCard
+23:11:39.951 [main] INFO  - Filled GiftCard form Succesfully
+23:11:40.083 [main] INFO  - Filled Recipient Details
+23:11:40.229 [main] INFO  - Filled Sender Details
+23:11:40.244 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:11:49.375 [main] INFO  - Handling Pincode Error in Sender form
+23:11:55.484 [main] INFO  - Handling Recipent Mobile Error in form
+23:11:55.571 [main] INFO  - Gift Card Sent Successfully
+23:14:08.370 [main] INFO  - Start The Test
+23:14:08.392 [main] INFO  - Welcome To Home Page
+23:14:11.520 [main] INFO  - Navigate to Login Page
+23:14:17.743 [main] INFO  - Verify Login Page Successfully
+23:14:18.804 [main] INFO  - Login Successfully
+23:14:19.595 [main] INFO  - Navigate to Profile Page
+23:14:19.633 [main] INFO  - Login Status Verfied
+23:14:25.780 [main] INFO  - Navigate to GiftCard Page
+23:14:25.960 [main] INFO  - Click on Wedding GiftCard
+23:14:28.231 [main] INFO  - Filled GiftCard form Succesfully
+23:14:28.601 [main] INFO  - Filled Recipient Details
+23:14:28.759 [main] INFO  - Filled Sender Details
+23:14:28.775 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:14:33.540 [main] INFO  - Navigate to GiftCard Page
+23:14:33.726 [main] INFO  - Click on Wedding GiftCard
+23:14:35.984 [main] INFO  - Filled GiftCard form Succesfully
+23:14:36.111 [main] INFO  - Filled Recipient Details
+23:14:36.261 [main] INFO  - Filled Sender Details
+23:14:36.276 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:14:40.388 [main] INFO  - Navigate to GiftCard Page
+23:14:40.552 [main] INFO  - Click on Wedding GiftCard
+23:14:42.804 [main] INFO  - Filled GiftCard form Succesfully
+23:14:42.918 [main] INFO  - Filled Recipient Details
+23:14:43.077 [main] INFO  - Filled Sender Details
+23:14:43.091 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:14:47.988 [main] INFO  - Navigate to GiftCard Page
+23:14:48.178 [main] INFO  - Click on Wedding GiftCard
+23:14:50.429 [main] INFO  - Filled GiftCard form Succesfully
+23:14:50.542 [main] INFO  - Filled Recipient Details
+23:14:50.700 [main] INFO  - Filled Sender Details
+23:14:50.719 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+23:14:59.822 [main] INFO  - Handling Pincode Error in Sender form
+23:15:05.928 [main] INFO  - Handling Recipent Mobile Error in form
+23:15:06.006 [main] INFO  - Gift Card Sent Successfully
+23:15:07.701 [main] INFO  - Start the Search Test
+23:15:11.169 [main] INFO  - Searching... wardrobe in Search Input
+23:15:11.260 [main] INFO  - Search page Verified Successfully
+23:15:11.268 [main] INFO  - Scroll to View Products Successfully
+23:15:13.542 [main] INFO  - Close the popup
+23:15:15.752 [main] INFO  - Search Categroy Filter
+23:15:19.335 [main] INFO  - Search Price Filter
+23:15:19.335 [main] INFO  - Search Results Fetch from Site
+23:15:19.356 [main] INFO  - Total number of products: 30
+23:15:19.588 [main] INFO  - Test completed successfully
+23:15:19.686 [main] INFO  - End The Search Test
+23:15:23.222 [main] INFO  - WarDrobe Test Started
+23:15:26.121 [main] INFO  - Close the Popup window
+23:15:26.134 [main] INFO  - Wardrobe Page Verify Successfully
+23:15:28.737 [main] INFO  - Set the Price Filter
+23:15:30.948 [main] INFO  - Set the Brand Filter
+23:15:33.155 [main] INFO  - Set the Door Filter
+23:15:33.330 [main] INFO  - Set the Material Filter
+23:15:33.346 [main] INFO  - Wardrobe Filter Results Printed Here: 
+23:15:33.347 [main] INFO  - Total products: 30

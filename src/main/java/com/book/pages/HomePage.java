@@ -36,19 +36,12 @@ public class HomePage {
 
 	}
 
-	public void clickOnLoginDropdownMenu() {
-		actions.moveToElement(accountDropMenu).build().perform();
-		loginBtn.click();
-	}
-
 	public boolean verifyLogo() {
 		return urbanLadderLogo.isDisplayed();
 	}
 
-	public LoginPage navigateToLoginPage() throws InterruptedException {
-		Thread.sleep(2000);
+	public LoginPage navigateToLoginPage() {
 		actions.moveToElement(accountDropMenu).build().perform();
-		Thread.sleep(2000);
 		loginBtn.click();
 		return new LoginPage(driver);
 	}

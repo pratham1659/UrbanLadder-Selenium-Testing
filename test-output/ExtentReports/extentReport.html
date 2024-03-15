@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">Hybrid Test Automation Results Report</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">15/03/2024 08:23:01</span></a>
+<a href="#"><span class="badge badge-primary">15/03/2024 11:14:03</span></a>
 </li>
 </ul>
 </div>
@@ -45,6 +45,11 @@
 <li class="nav-item dropdown" onclick="toggleView('test-view')">
 <a id="nav-test" class="dropdown-toggle" href="#">
 <span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
 </a>
 </li>
 <li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
@@ -67,6 +72,8 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<a class="dropdown-item" status="skip" href="#"><span>Skip</span><span class="status warning"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -79,9 +86,9 @@
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">testGiftCard</p>
+            <p class="name">navigateToHomePage</p>
             <p class="text-sm">
-              <span>8:23:08 pm</span> / <span>00:00:21:614</span>
+              <span>11:14:08 pm</span> / <span>00:00:00:025</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -89,10 +96,10 @@
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">testGiftCard</h5>
-<span class='badge badge-success'>03.15.2024 8:23:08 pm</span>
-<span class='badge badge-danger'>03.15.2024 8:23:30 pm</span>
-<span class='badge badge-default'>00:00:21:614</span>
+<h5 class="test-status text-pass">navigateToHomePage</h5>
+<span class='badge badge-success'>03.15.2024 11:14:08 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:14:08 pm</span>
+<span class='badge badge-default'>00:00:00:025</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
 <span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
@@ -105,16 +112,482 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>8:23:08 pm</td>
+        <td>11:14:08 pm</td>
+        <td>
+          navigateToHomePage started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:14:08 pm</td>
+        <td>
+          navigateToHomePage got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testLogin</p>
+            <p class="text-sm">
+              <span>11:14:11 pm</span> / <span>00:00:08:113</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">testLogin</h5>
+<span class='badge badge-success'>03.15.2024 11:14:11 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:14:19 pm</span>
+<span class='badge badge-default'>00:00:08:113</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:11 pm</td>
+        <td>
+          testLogin started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:14:19 pm</td>
+        <td>
+          testLogin got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testGiftCard</p>
+            <p class="text-sm">
+              <span>11:14:25 pm</span> / <span>00:00:03:010</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testGiftCard</h5>
+<span class='badge badge-success'>03.15.2024 11:14:25 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:14:28 pm</span>
+<span class='badge badge-default'>00:00:03:010</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:25 pm</td>
         <td>
           testGiftCard started executing
         </td>
       </tr>
       <tr class="event-row">
-        <td><span class="badge log pass-bg">Pass</span></td>
-        <td>8:23:30 pm</td>
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:28 pm</td>
         <td>
-          testGiftCard got successfully executed
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.book.testcases.GiftCardTest.testGiftCard(GiftCardTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:14:28 pm</td>
+        <td>
+          testGiftCard got skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="skip" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testGiftCard</p>
+            <p class="text-sm">
+              <span>11:14:33 pm</span> / <span>00:00:02:747</span>
+              <span class="badge skip-bg log float-right">Skip</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-skip">testGiftCard</h5>
+<span class='badge badge-success'>03.15.2024 11:14:33 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:14:36 pm</span>
+<span class='badge badge-default'>00:00:02:747</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:33 pm</td>
+        <td>
+          testGiftCard started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:36 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.book.testcases.GiftCardTest.testGiftCard(GiftCardTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log skip-bg">Skip</span></td>
+        <td>11:14:36 pm</td>
+        <td>
+          testGiftCard got skipped
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">testGiftCard</p>
+            <p class="text-sm">
+              <span>11:14:40 pm</span> / <span>00:00:02:881</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">testGiftCard</h5>
+<span class='badge badge-success'>03.15.2024 11:14:40 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:14:43 pm</span>
+<span class='badge badge-default'>00:00:02:881</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='/Users/prathamkumar/eclipse-workspace/WardrobesHackathon/Screenshots/testGiftCard_2024-03-15_23-14-43.png' src="/Users/prathamkumar/eclipse-workspace/WardrobesHackathon/Screenshots/testGiftCard_2024-03-15_23-14-43.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:40 pm</td>
+        <td>
+          testGiftCard started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:43 pm</td>
+        <td>
+          <textarea readonly class="code-block">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertTrue(Assert.java:45)
+	at org.testng.Assert.assertTrue(Assert.java:55)
+	at com.book.testcases.GiftCardTest.testGiftCard(GiftCardTest.java:59)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</textarea>
+          
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>11:14:43 pm</td>
+        <td>
+          testGiftCard got failed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">giftCardHandlingError</p>
+            <p class="text-sm">
+              <span>11:14:47 pm</span> / <span>00:00:18:021</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">giftCardHandlingError</h5>
+<span class='badge badge-success'>03.15.2024 11:14:47 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:15:06 pm</span>
+<span class='badge badge-default'>00:00:18:021</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:14:47 pm</td>
+        <td>
+          giftCardHandlingError started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:15:06 pm</td>
+        <td>
+          giftCardHandlingError got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">navigateToSearchTest</p>
+            <p class="text-sm">
+              <span>11:15:07 pm</span> / <span>00:00:11:888</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">navigateToSearchTest</h5>
+<span class='badge badge-success'>03.15.2024 11:15:07 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:15:19 pm</span>
+<span class='badge badge-default'>00:00:11:888</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:15:07 pm</td>
+        <td>
+          navigateToSearchTest started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:15:19 pm</td>
+        <td>
+          navigateToSearchTest got successfully executed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">wardrobeTest</p>
+            <p class="text-sm">
+              <span>11:15:23 pm</span> / <span>00:00:10:162</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">wardrobeTest</h5>
+<span class='badge badge-success'>03.15.2024 11:15:23 pm</span>
+<span class='badge badge-danger'>03.15.2024 11:15:33 pm</span>
+<span class='badge badge-default'>00:00:10:162</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span title='Skip to the next failed step' class='badge badge-danger pointer float-right ne ml-1'><i class="fa fa-fast-forward"></i></span>
+<span title='Collapse all nodes' class='badge badge-default pointer float-right ct ml-1'><i class="fa fa-compress"></i></span>
+<span title='Expand all nodes' class='badge badge-default pointer float-right et'><i class="fa fa-expand"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>11:15:23 pm</td>
+        <td>
+          wardrobeTest started executing
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>11:15:33 pm</td>
+        <td>
+          wardrobeTest got successfully executed
         </td>
       </tr>
   </tbody>
@@ -131,30 +604,95 @@
 </div>
 <div class="test-content-detail"><div class="detail-body"></div></div>
 </div></div>
-<div class="container-fluid p-4 view dashboard-view">
+<div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+<span class='badge log badge-skip'>2</span>
+</span>
+<p class="name">java.lang.AssertionError</p>
+<p class="duration text-sm">3 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.AssertionError</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+<span status="skip" class='badge log badge-skip'>2 skipped</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>23:14:25 pm</td>
+<td>
+<a href="#" class="linked" test-id='3' id='3'>testGiftCard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="skip">
+<td><span class="badge log skip-bg">Skip</span></td>
+<td>23:14:33 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='4'>testGiftCard</a>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>23:14:40 pm</td>
+<td>
+<a href="#" class="linked" test-id='5' id='5'>testGiftCard</a>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="container-fluid p-4 view dashboard-view">
 <div class="row">
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>15/03/2024 08:23:01</h3>
+<h3>15/03/2024 11:14:03</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>15/03/2024 08:23:30</h3>
+<h3>15/03/2024 11:15:33</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>1</h3>
+<h3>5</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>1</h3>
 </div></div>
 </div>
 </div>
@@ -170,13 +708,13 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>1</b> tests passed
+<div><small data-tooltip='62%'>
+<b>5</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
-<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+<small data-tooltip='12%'><b>1</b> tests failed,
+<b>2</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
 </div>
@@ -193,10 +731,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='50%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='26%'><b>5</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>1</b> others
+<small data-tooltip='5%'><b>1</b> events failed,
+<b data-tooltip='%'>13</b> others
 </small>
 </div>
 </div>
@@ -212,7 +750,7 @@
 </div></div>
 <script>
 var timeline = {
-"testGiftCard":21.614
+"navigateToHomePage":0.025,"testLogin":8.113,"testGiftCard":3.01,"testGiftCard":2.747,"testGiftCard":2.881,"giftCardHandlingError":18.021,"navigateToSearchTest":11.888,"wardrobeTest":10.162
 };
 </script>
 <div class="row">
@@ -259,10 +797,10 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 1,
-failParent: 0,
+passParent: 5,
+failParent: 1,
 warningParent: 0,
-skipParent: 0,
+skipParent: 2,
 childCount: 5,
 passChild: 0,
 failChild: 0,
@@ -276,11 +814,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 0,
+passEvents: 5,
+failEvents: 1,
 warningEvents: 0,
-skipEvents: 0,
-infoEvents: 1
+skipEvents: 2,
+infoEvents: 11
 };
 </script>        </div>
       </div>

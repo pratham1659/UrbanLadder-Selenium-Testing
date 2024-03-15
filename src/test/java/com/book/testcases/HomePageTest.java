@@ -11,7 +11,6 @@ import org.testng.annotations.Test;
 import com.book.base.TestBase;
 import com.book.pages.HomePage;
 import com.book.pages.LoginPage;
-import com.book.report.ReportGenerator;
 
 public class HomePageTest extends TestBase {
 
@@ -19,7 +18,6 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	LoginPage loginPage;
 	public static Logger log;
-	ReportGenerator report;
 
 	public HomePageTest() {
 		super();
@@ -29,7 +27,6 @@ public class HomePageTest extends TestBase {
 	public void setUp() {
 
 		driver = initializeBrowser();
-		report = new ReportGenerator();
 		homePage = new HomePage(driver);
 		log = LogManager.getLogger(HomePageTest.class);
 
@@ -42,7 +39,7 @@ public class HomePageTest extends TestBase {
 
 		Assert.assertTrue(homePage.verifyLogo());
 
-		log.info("Navigate To Home Page");
+		log.info("Welcome To Home Page");
 		
 	}
 
