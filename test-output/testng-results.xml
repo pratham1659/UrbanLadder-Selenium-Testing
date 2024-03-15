@@ -1,31 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="8" passed="5" failed="1" skipped="0">
+<testng-results retried="2" ignored="0" total="4" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-03-15T23:14:03 IST" name="Suite" finished-at="2024-03-15T23:15:33 IST" duration-ms="89752">
+  <suite started-at="2024-03-16T00:06:08 IST" name="Suite" finished-at="2024-03-16T00:06:51 IST" duration-ms="43789">
     <groups>
     </groups>
-    <test started-at="2024-03-15T23:14:03 IST" name="Test" finished-at="2024-03-15T23:15:33 IST" duration-ms="89752">
-      <class name="com.book.testcases.WardrobeTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.WardrobeTest@1a75e76a]" started-at="2024-03-15T23:15:19 IST" name="setUp" finished-at="2024-03-15T23:15:23 IST" duration-ms="3535" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="wardrobeTest()[pri:0, instance:com.book.testcases.WardrobeTest@1a75e76a]" started-at="2024-03-15T23:15:23 IST" name="wardrobeTest" finished-at="2024-03-15T23:15:33 IST" duration-ms="10162" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- wardrobeTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.WardrobeTest@1a75e76a]" started-at="2024-03-15T23:15:33 IST" name="tearDown" finished-at="2024-03-15T23:15:33 IST" duration-ms="98" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.book.testcases.WardrobeTest -->
+    <test started-at="2024-03-16T00:06:08 IST" name="Test" finished-at="2024-03-16T00:06:51 IST" duration-ms="43789">
       <class name="com.book.testcases.GiftCardTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:19 IST" name="setUp" finished-at="2024-03-15T23:14:25 IST" duration-ms="6144" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:08 IST" name="setUp" finished-at="2024-03-16T00:06:12 IST" duration-ms="4895" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:25 IST" name="testGiftCard" finished-at="2024-03-15T23:14:28 IST" duration-ms="3007" status="SKIP">
+        <test-method retried="true" signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:12 IST" name="testGiftCard" finished-at="2024-03-16T00:06:15 IST" duration-ms="3020" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -71,15 +57,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGiftCard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:28 IST" name="tearDown" finished-at="2024-03-15T23:14:28 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:15 IST" name="tearDown" finished-at="2024-03-16T00:06:16 IST" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:28 IST" name="setUp" finished-at="2024-03-15T23:14:33 IST" duration-ms="4654" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:16 IST" name="setUp" finished-at="2024-03-16T00:06:19 IST" duration-ms="3464" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method retried="true" signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:33 IST" name="testGiftCard" finished-at="2024-03-15T23:14:36 IST" duration-ms="2747" status="SKIP">
+        <test-method retried="true" signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:19 IST" name="testGiftCard" finished-at="2024-03-16T00:06:22 IST" duration-ms="2704" status="SKIP">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -125,15 +111,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGiftCard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:36 IST" name="tearDown" finished-at="2024-03-15T23:14:36 IST" duration-ms="91" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:22 IST" name="tearDown" finished-at="2024-03-16T00:06:22 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:36 IST" name="setUp" finished-at="2024-03-15T23:14:40 IST" duration-ms="4008" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:22 IST" name="setUp" finished-at="2024-03-16T00:06:26 IST" duration-ms="4266" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:40 IST" name="testGiftCard" finished-at="2024-03-15T23:14:43 IST" duration-ms="2714" status="FAIL">
+        <test-method signature="testGiftCard()[pri:1, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:26 IST" name="testGiftCard" finished-at="2024-03-16T00:06:29 IST" duration-ms="2725" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [true] but found [false]]]>
@@ -179,65 +165,23 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testGiftCard -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:43 IST" name="tearDown" finished-at="2024-03-15T23:14:43 IST" duration-ms="94" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:29 IST" name="tearDown" finished-at="2024-03-16T00:06:29 IST" duration-ms="91" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:43 IST" name="setUp" finished-at="2024-03-15T23:14:47 IST" duration-ms="4623" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:29 IST" name="setUp" finished-at="2024-03-16T00:06:33 IST" duration-ms="3942" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="giftCardHandlingError()[pri:2, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:14:47 IST" name="giftCardHandlingError" finished-at="2024-03-15T23:15:06 IST" duration-ms="18021" status="PASS">
+        <test-method signature="giftCardHandlingError()[pri:2, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:33 IST" name="giftCardHandlingError" finished-at="2024-03-16T00:06:51 IST" duration-ms="18049" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- giftCardHandlingError -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@273444fe]" started-at="2024-03-15T23:15:06 IST" name="tearDown" finished-at="2024-03-15T23:15:06 IST" duration-ms="102" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.GiftCardTest@793f29ff]" started-at="2024-03-16T00:06:51 IST" name="tearDown" finished-at="2024-03-16T00:06:51 IST" duration-ms="96" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.book.testcases.GiftCardTest -->
-      <class name="com.book.testcases.SearchTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.SearchTest@33bc72d1]" started-at="2024-03-15T23:15:06 IST" name="setUp" finished-at="2024-03-15T23:15:07 IST" duration-ms="1589" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="navigateToSearchTest()[pri:0, instance:com.book.testcases.SearchTest@33bc72d1]" started-at="2024-03-15T23:15:07 IST" name="navigateToSearchTest" finished-at="2024-03-15T23:15:19 IST" duration-ms="11888" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToSearchTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.SearchTest@33bc72d1]" started-at="2024-03-15T23:15:19 IST" name="tearDown" finished-at="2024-03-15T23:15:19 IST" duration-ms="97" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.book.testcases.SearchTest -->
-      <class name="com.book.testcases.HomePageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.HomePageTest@202b0582]" started-at="2024-03-15T23:14:03 IST" name="setUp" finished-at="2024-03-15T23:14:08 IST" duration-ms="4626" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="navigateToHomePage()[pri:0, instance:com.book.testcases.HomePageTest@202b0582]" started-at="2024-03-15T23:14:08 IST" name="navigateToHomePage" finished-at="2024-03-15T23:14:08 IST" duration-ms="27" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToHomePage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.HomePageTest@202b0582]" started-at="2024-03-15T23:14:08 IST" name="tearDown" finished-at="2024-03-15T23:14:08 IST" duration-ms="91" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.book.testcases.HomePageTest -->
-      <class name="com.book.testcases.LoginPageTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.book.testcases.LoginPageTest@16eb3ea3]" started-at="2024-03-15T23:14:08 IST" name="setUp" finished-at="2024-03-15T23:14:11 IST" duration-ms="3034" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="testLogin()[pri:0, instance:com.book.testcases.LoginPageTest@16eb3ea3]" started-at="2024-03-15T23:14:11 IST" name="testLogin" finished-at="2024-03-15T23:14:19 IST" duration-ms="8114" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.book.testcases.LoginPageTest@16eb3ea3]" started-at="2024-03-15T23:14:19 IST" name="tearDown" finished-at="2024-03-15T23:14:19 IST" duration-ms="0" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- com.book.testcases.LoginPageTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
 </testng-results>

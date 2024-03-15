@@ -292,3 +292,57 @@ java.lang.Exception: Element Not Found
 23:15:33.330 [main] INFO  - Set the Material Filter
 23:15:33.346 [main] INFO  - Wardrobe Filter Results Printed Here: 
 23:15:33.347 [main] INFO  - Total products: 30
+00:04:21.504 [main] INFO  - Navigate to GiftCard Page
+00:04:21.696 [main] INFO  - Click on Wedding GiftCard
+00:04:23.968 [main] INFO  - Filled GiftCard form Succesfully
+00:04:24.334 [main] INFO  - Filled Recipient Details
+00:04:24.502 [main] INFO  - Filled Sender Details
+00:04:24.518 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:04:31.159 [main] INFO  - Navigate to GiftCard Page
+00:04:31.322 [main] INFO  - Click on Wedding GiftCard
+00:04:33.585 [main] INFO  - Filled GiftCard form Succesfully
+00:04:33.698 [main] INFO  - Filled Recipient Details
+00:04:33.845 [main] INFO  - Filled Sender Details
+00:04:33.859 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:04:38.333 [main] INFO  - Navigate to GiftCard Page
+00:04:38.531 [main] INFO  - Click on Wedding GiftCard
+00:04:40.794 [main] INFO  - Filled GiftCard form Succesfully
+00:04:40.914 [main] INFO  - Filled Recipient Details
+00:04:41.064 [main] INFO  - Filled Sender Details
+00:04:41.082 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:04:45.312 [main] INFO  - Navigate to GiftCard Page
+00:04:45.502 [main] INFO  - Click on Wedding GiftCard
+00:04:47.775 [main] INFO  - Filled GiftCard form Succesfully
+00:04:47.887 [main] INFO  - Filled Recipient Details
+00:04:48.031 [main] INFO  - Filled Sender Details
+00:04:48.045 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:04:57.199 [main] INFO  - Handling Pincode Error in Sender form
+00:05:05.632 [main] INFO  - Navigate to GiftCard Page
+00:05:05.638 [main] INFO  - Navigate to GiftCard Page
+00:06:12.965 [main] INFO  - Navigate to GiftCard Page
+00:06:13.144 [main] INFO  - Click on Wedding GiftCard
+00:06:15.431 [main] INFO  - Filled GiftCard form Succesfully
+00:06:15.790 [main] INFO  - Filled Recipient Details
+00:06:15.954 [main] INFO  - Filled Sender Details
+00:06:15.968 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:06:19.542 [main] INFO  - Navigate to GiftCard Page
+00:06:19.699 [main] INFO  - Click on Wedding GiftCard
+00:06:21.961 [main] INFO  - Filled GiftCard form Succesfully
+00:06:22.071 [main] INFO  - Filled Recipient Details
+00:06:22.221 [main] INFO  - Filled Sender Details
+00:06:22.235 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:06:26.605 [main] INFO  - Navigate to GiftCard Page
+00:06:26.776 [main] INFO  - Click on Wedding GiftCard
+00:06:29.044 [main] INFO  - Filled GiftCard form Succesfully
+00:06:29.159 [main] INFO  - Filled Recipient Details
+00:06:29.305 [main] INFO  - Filled Sender Details
+00:06:29.319 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:06:33.696 [main] INFO  - Navigate to GiftCard Page
+00:06:33.879 [main] INFO  - Click on Wedding GiftCard
+00:06:36.132 [main] INFO  - Filled GiftCard form Succesfully
+00:06:36.254 [main] INFO  - Filled Recipient Details
+00:06:36.406 [main] INFO  - Filled Sender Details
+00:06:36.419 [main] INFO  - Error Pincode: * Sorry! We are currently not serviceable in this zipcode.
+00:06:45.543 [main] INFO  - Handling Pincode Error in Sender form
+00:06:51.667 [main] INFO  - Handling Recipent Mobile Error in form
+00:06:51.744 [main] INFO  - Gift Card Sent Successfully
